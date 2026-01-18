@@ -39,7 +39,8 @@ body {
 .cover-item {
     position: absolute;
     width: 600px;
-    height: 600px; /* Square container for the image to fit in */
+    height: 600px;
+    /* Square container for the image to fit in */
     left: 50%;
     top: 50%;
     margin-left: -300px;
@@ -55,7 +56,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0) 60%, rgba(0,0,0,0.4));
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.4));
 }
 
 .cover-item img {
@@ -63,7 +64,7 @@ body {
     max-height: 100%;
     object-fit: contain;
     border-radius: 4px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .controls {
@@ -103,12 +104,30 @@ body {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 4px;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .image-counter {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.6);
+}
+
+.logo-link {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    z-index: 2000;
+    transition: opacity 0.3s ease;
+}
+
+.logo-link:hover {
+    opacity: 0.8;
+}
+
+.logo {
+    width: 140px;
+    height: auto;
+    display: block;
 }
 
 .contact-link {
