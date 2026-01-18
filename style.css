@@ -111,6 +111,23 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
+.contact-link {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    z-index: 2000;
+    transition: color 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.contact-link:hover {
+    color: #fff;
+}
+
 @media (max-width: 768px) {
     .cover-item {
         width: 300px;
